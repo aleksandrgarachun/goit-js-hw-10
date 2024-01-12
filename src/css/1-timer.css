@@ -3,6 +3,18 @@
     margin-left: 156px;
 
 }
+.input-text {
+    color: #2E2F42;
+    font-family: "Montserrat", sans-serif;    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.04em;    
+}
+.input-text:active {
+    color: #000; 
+}
 
 .button {
     border-radius: 8px;

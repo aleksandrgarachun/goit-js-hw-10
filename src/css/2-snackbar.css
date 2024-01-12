@@ -1,0 +1,76 @@
+body {
+    font-family: "Montserrat", sans-serif;    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.04em;    
+
+
+}
+.label-words {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #2E2F42;
+    
+}
+.label-input {
+    width: 360px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #808080;
+    color: #2E2F42;
+    padding-left: 16px;
+    font-family: "Montserrat", sans-serif;    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+}
+.label-input:hover {
+    border-radius: 4px;
+    border: 1px solid #000;    
+}
+
+.fieldset {
+    width: 350px;
+    height: 64px;
+    border-radius: 4px;
+    border: 1px solid #808080;    
+    
+}
+.fieldset:hover {
+    stroke-width: 1px;
+    stroke: #000;
+}
+
+.legend {
+    margin-top: 16px;
+    margin-bottom: 7px;
+    color: #2E2F42;
+    
+
+}
+
+.label-radio {
+    color: #2E2F42;
+}
+
+.button {
+    margin-top: 24px;
+    border-radius: 8px;
+    background: #4E75FF;
+    color: #FFF;
+    font-weight: 500;
+    width: 380px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;    
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;       
+}
+.button:hover {
+    border-radius: 8px;
+    background: #6C8CFF;    
+}

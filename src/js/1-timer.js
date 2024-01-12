@@ -97,11 +97,7 @@ function convertMs(ms) {
 
 function addLeadingZero(value) {
     value = String(value);
-    if(value.String < 2) {
-        String(value).padStart(2, "0");
-    } else {
-        return value;
-    }
+    return value.String < 2 ? String(value).padStart(2, "0") : value;
     
     
 }
