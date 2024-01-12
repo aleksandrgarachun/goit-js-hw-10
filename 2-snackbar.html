@@ -5,11 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-  <script type="module" crossorigin src="/goit-js-hw-10/assets/modulepreload-polyfill-ec808ebb.js"></script>
+  <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers2.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-ec808ebb.js">
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-651d7991.js">
+  <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-80d0dc0f.css">
+  <link rel="stylesheet" href="/goit-js-hw-10/assets/2-snackbar-f1cd3302.css">
 </head>
 <body>
     <p><a href="index.html">Back</a></p>
 
+    <form class="form">
+        <label class="label-words">
+          Delay (ms)
+          <input class="label-input" type="number" name="delay" required />
+        </label>
+      
+        <fieldset class="fieldset">
+          <legend class="legend">State</legend>
+          <label class="label-radio">
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label class="label-radio">
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+      
+        <button class="button" type="submit">Create notification</button>
+      </form>
 
     
 </body>
