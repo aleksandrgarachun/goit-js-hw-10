@@ -3,18 +3,18 @@ import "izitoast/dist/css/iziToast.min.css";
 
 const form = document.querySelector(".form");
 const delayInput = form.querySelector('input[name="delay"]');
-const stateInput = form.querySelector('input[name="state"]');
 
 
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     const delay = delayInput.value;
-    const state = stateInput.checked ? "fulfilled" : "rejected";
+    const state = form.state.value;
 
-    delayInput.value = "";
+    form.reset();
 
-    makeRequest(delay, state)
+
+    createDelayedPromise(delay, state)
     .then(() => {
         iziToast.show({
             position: 'topRight',
@@ -42,7 +42,7 @@ form.addEventListener("submit", (event) => {
    
 });
 
-      const makeRequest = (delay, state) =>  {
+      const createDelayedPromise = (delay, state) =>  {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
                 if(state === "fulfilled") {
